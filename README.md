@@ -1,18 +1,18 @@
-🧩 Tech Stack
+**🧩 Tech Stack**
 Backend: Spring Boot, Spring Cloud (OpenFeign)
 
 
-Database: MySQL / MongoDB
+**Database:** MySQL / MongoDB
 
 
-Security: Spring Security + JWT (optional for User Service)
+**Security:** Spring Security + JWT (optional for User Service)
 
 
-Utils: Lombok, MapStruct (optional)
+**Utils:** Lombok, MapStruct (optional)
 
 
 
-📦 Modules & Responsibilities
+**📦 Modules & Responsibilities**
 🔹 1. User Service (Master Module)
 Manage Users (Admin, Staff)
 
@@ -23,7 +23,7 @@ Roles & Authentication (optional)
 FeignClient for user info
 
 
-Endpoints:
+**Endpoints:**
 POST /users – Create user
 
 
@@ -34,7 +34,7 @@ GET /users/email/{email} – Get by email
 
 
 
-🔹 2. Product Service (Master Module)
+**🔹 2. Product Service (Master Module)**
 Manage Products (Add/Update/Delete)
 
 
@@ -44,7 +44,7 @@ List by category/type
 FeignClient for product info
 
 
-Endpoints:
+**Endpoints:**
 POST /products – Add product
 
 
@@ -55,7 +55,7 @@ GET /products – List all
 
 
 
-🔹 3. Inventory Service (Stock Module)
+**🔹 3. Inventory Service (Stock Module)**
 Track & Update Stock
 
 
@@ -65,7 +65,7 @@ Low-stock alerts (optional)
 Validate product via FeignClient
 
 
-Endpoints:
+**Endpoints:**
 POST /inventory – Add stock
 
 
@@ -76,7 +76,7 @@ GET /inventory/{productId} – Get stock
 
 
 
-🔹 4. Order Service (Order Module)
+**🔹 4. Order Service (Order Module)**
 Place & Manage Orders
 
 
@@ -86,7 +86,7 @@ Deduct stock post-order
 Fetch orders by user/product
 
 
-Endpoints:
+**Endpoints:**
 POST /orders – Place order
 
 
@@ -96,7 +96,7 @@ GET /orders/{id} – Get by ID
 GET /orders/user/{userId} – Orders by user
 
 
-Flow:
+**Flow:**
 Validate user & product (via FeignClient)
 
 
